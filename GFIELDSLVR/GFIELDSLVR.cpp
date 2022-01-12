@@ -5,30 +5,26 @@
 
 using namespace std;
 
+double MASS1;
+double MASS2;
+double DISTANCE;
+double GFORCE;
+double KENERGY;
+double PENERGY;
+double MENERGY;
+double VECTORI;
+double VECTORJ;
+double RESULTI;
+double RESULTJ;
+double GCONST;
+
+double RESULT;
+
+
 
 int main()
 {
-	double MASS1;
-	double MASS2;
-	double DISTANCE;
-	double GFORCE;
-	double KENERGY;
-	double PENERGY;
-	double MENERGY;
-	double VECTORI;
-	double VECTORJ;
-	double RESULTI;
-	double RESULTJ;
-	double GCONST;
-
-	double RESULT;
-
-
-
-	
 	GCONST = 6.67 * pow(10, -11);
-	//cout << GCONST;
-
 
 	cout << "\nMass 1:\n";
 	cin >> MASS1;
@@ -56,14 +52,18 @@ int main()
 		string sign = " - ";
 		string i = " i";
 		string j = " j ";
+		cout << "\n\n";
 		cout << RESULTI << i << sign << RESULTJ*(-1) << j;
+		cout << "\n\n";
 	}
 	else
 	{
 		string sign = " + ";
 		string i = " i";
 		string j = " j";
+		cout << "\n\n";
 		cout << RESULTI << i << sign << RESULTJ << j;
+		cout << "\n\n";
 	}
 
 }
