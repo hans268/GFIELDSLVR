@@ -30,22 +30,22 @@ int main()
 	RESULTJ = GFORCE * VECTORJ;
 	
 
-	if (RESULTJ < 0)
+	if (RESULTJ >= 0)
 	{
-		string sign = " - ";
+		string sign = " + ";
 		string i = " i";
 		string j = " j ";
 		cout << "\n\n";
-		cout << RESULTI << i << sign << RESULTJ*(-1) << j;
+        cout << RESULTI << i << sign << abs(RESULTJ) << j;
 		cout << "\n\n";
 	}
 	else
 	{
-		string sign = " + ";
+		string sign = " - ";
 		string i = " i";
 		string j = " j";
 		cout << "\n\n";
-		cout << RESULTI << i << sign << RESULTJ << j;
+		cout << RESULTI << i << sign << abs(RESULTJ)  << j;
 		cout << "\n\n";
 	}
 
